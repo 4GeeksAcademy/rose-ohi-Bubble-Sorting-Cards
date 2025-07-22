@@ -1,5 +1,83 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
+
 body{
-    background: white;
+    background: green;
+    height: 100vh;
+    margin: auto;
+    margin-bottom: 75px;
 }
+   
+ 
+
+  .plcard {
+    width: 60px;
+    height: 90px;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    background: white;
+  }
+
+  .suit-top{
+    position: absolute;
+    font-size: 18px;
+    display: block;
+    
+
+  }
+
+  .suit-bttm {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 18px;
+   
+
+  }
+
+
+/* center number/item */
+  .numberr {
+    font-size: 20px;
+    margin-top: 25px;
+    margin-right: 25px;
+    justify-content: center; 
+    display: flex;
+    font-weight: bold;
+    font-family: "Lucida Console", "Courier New", monospace;
+  
+  }
+
+  .red {
+    color: red;
+  }
+
+  .black {
+  color: black;
+}
+.deck-grid {
+   /* display: grid; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+     grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+
+}
+  /* grid-template-columns: repeat(4, 1fr); */
+
+
+
+#sort-log {
+  margin-top: 50px;
+  border-top: rgb(11, 72, 34) 2px solid;
+
+}
+
+.sorted-row {
+  display: flex;
+  margin-top: 20px;
+  gap: 8px;
+} 
